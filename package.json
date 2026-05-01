@@ -4,6 +4,6 @@
 		"test:confirm-bash": "./tests/bash-test.sh"
 	},
 	"dependencies": {
-		"@types/bun": "^1.3.5"
+		"@types/bun": "^1.3.13"
 	}
 }

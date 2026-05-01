@@ -1,6 +1,6 @@
 #! /usr/bin/env bun
-import { parseArgs, styleText } from "util";
-import process from "process";
+import { parseArgs, styleText } from "node:util";
+import process from "node:process";
 
 const { values: args } = parseArgs({
 	args: Bun.argv,
@@ -26,7 +26,7 @@ console.log(styleText("yellow", args.message));
 
 console.log(softDivider);
 
-const answer = prompt(styleText("cyan", `Enter "${styleText("yellow", args["confirm-string"])}" to confirm:`));
+const answer = prompt(styleText("cyan", `Enter "`) + styleText("yellow", args["confirm-string"]) + styleText("cyan", `" to confirm:`));
 
 console.log(softDivider);
 
